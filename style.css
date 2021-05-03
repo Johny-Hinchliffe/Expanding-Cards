@@ -35,7 +35,10 @@ body {
 }
 
 .panel h3 {
-    font-size: 14px;
+    font-size: 34px;
+    line-height: 1.1;
+    letter-spacing: 0.16em;
+    font-weight: 600;
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -45,10 +48,12 @@ body {
 
 .panel.active {
     flex: 5;
+    
 }
 
 .panel.active h3 {
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.6s;
 }
 
 @media(max-width: 480px) {
@@ -60,4 +65,7 @@ body {
         display: none;
     }
 
+}
+
+.panel {
 }
